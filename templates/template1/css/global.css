@@ -5,7 +5,7 @@
 
 html {
    @media (max-width: 575.98px) {
-      font-size: .75em;
+      font-size: .875em;
    }
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .navbar {
-   .navbar-brand img.logo {
+   .navbar-brand .img-logo {
       width: 50px;
 
       @media (min-width: 992px) {
@@ -29,25 +29,21 @@ body {
       }
    }
 
-   .navbar-collapse {
-      .nav-link {
-         &.active {
-            color: var(--bs-primary) !important;
+   .nav-link {
+      .link-icon {
+         display: none;
+      }
 
-            &>.link-text {
-               opacity: 1 !important;
-            }
-         }
+      &.active {
+         color: var(--bs-primary) !important;
 
-         .link-icon {
-            visibility: hidden;
+         &>.link-text {
+            opacity: 1 !important;
          }
 
          @media (min-width: 992px) {
-            &.active {
-               .link-icon {
-                  visibility: visible;
-               }
+            &>.link-icon {
+               display: block;
             }
          }
       }
