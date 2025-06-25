@@ -1,0 +1,55 @@
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+   --bs-gutter-x: 2rem;
+}
+
+.link-hover {
+   text-decoration: none;
+   opacity: .75;
+   transition: .36s ease-in-out;
+
+   &:hover,
+   &:focus,
+   &.active {
+      opacity: 1;
+   }
+}
+
+.link-hover-underline {
+   text-decoration: none;
+
+   &:hover,
+   &:focus,
+   &.active {
+      text-decoration: underline;
+   }
+}
+
+.fs-reset {
+   font-size: inherit !important;
+}
+
+.fs-small {
+   font-size: small !important;
+}
+
+.text-reset {
+   color: currentColor !important;
+}
+
+.border-reset {
+   border-color: currentColor !important;
+}
+
+.border-body {
+   border-color: var(--bs-body-bg) !important;
+}
+
+.start-75 {
+   left: 75% !important;
+}
