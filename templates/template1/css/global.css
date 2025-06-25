@@ -11,6 +11,12 @@
    }
 }
 
+html {
+   @media (max-width: 575.98px) {
+      font-size: .75em;
+   }
+}
+
 body {
    display: flex;
    flex-direction: column;
