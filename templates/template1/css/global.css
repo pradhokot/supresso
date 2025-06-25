@@ -27,13 +27,37 @@ body {
 }
 
 .navbar {
-   height: var(--navbar-height);
+   min-height: var(--navbar-height);
 
    .navbar-brand img.logo {
       width: 50px;
 
       @media (min-width: 992px) {
          width: 80px;
+      }
+   }
+
+   .navbar-collapse {
+      .nav-link {
+         &.active {
+            color: var(--bs-primary) !important;
+
+            &>.link-text {
+               opacity: 1 !important;
+            }
+         }
+
+         .link-icon {
+            visibility: hidden;
+         }
+
+         @media (min-width: 992px) {
+            &.active {
+               .link-icon {
+                  visibility: visible;
+               }
+            }
+         }
       }
    }
 }
@@ -47,7 +71,8 @@ body {
          visibility: visible;
       }
 
-      .link-icon, .link-text {
+      .link-icon,
+      .link-text {
          opacity: 1;
       }
    }
@@ -73,6 +98,7 @@ body {
    }
 
    @media (min-width: 992px) {
+
       &:hover .link-text,
       &:focus .link-text {
          transform: translate(-50%, -50%) scale(.5);
