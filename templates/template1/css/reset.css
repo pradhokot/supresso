@@ -46,7 +46,7 @@
    border-color: currentColor !important;
 }
 
-.border-body {
+.border-body-bg {
    border-color: var(--bs-body-bg) !important;
 }
 
