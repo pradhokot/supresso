@@ -12,28 +12,46 @@
 </head>
 <body>
    <header class="fixed-top">
-      <div class="runtext text-bg-primary d-grid align-items-center">
-         <div class="container">
-            <marquee behavior="" direction="left" role="region">
-               <a href="#" class="text-reset link-hover-underline">
-                  <span>FREE SHIPPING FOR ORDERS OVER S$30 | KRIS+ IS BACK - GET YOUR 20% OFF NOW!</span>
-                  <i class="fas fa-chevron-right"></i>
-               </a>
-            </marquee>
-         </div><!-- end container -->
-      </div><!-- end running text -->
+      <script src="layout/runtext.js"></script>
       <nav class="navbar navbar-expand-lg bg-body">
          <div class="container">
             <a href="index.html" class="navbar-brand">
                <img src="../../assets/img/logo-supresso.svg" style="max-width: 3rem;" width="100%" height="auto" alt="">
             </a>
-            <button class="navbar-toggler">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navcol">
                <ul class="navbar-nav ms-lg-auto">
                   <li class="nav-item">
-                     <a href=""></a>
+                     <a href="#" class="nav-link" id="nav-shop">
+                        <span class="link-text">shop</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link" id="nav-shop">
+                        <span class="link-text">shop</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link" id="nav-shop">
+                        <span class="link-text">shop</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link" id="nav-shop">
+                        <span class="link-text">shop</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link" id="nav-shop">
+                        <span class="link-text">shop</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link" id="nav-shop">
+                        <span class="link-text">shop</span>
+                     </a>
                   </li>
                </ul>
             </div><!-- end navcol -->
@@ -83,7 +101,7 @@
       </section>
    </main>
    <script src="layout/footbar.js"></script>
-   <!-- <script src="js/global.js"></script> -->
+   <script src="js/global.js"></script>
    <script>
       $(document).ready(function() {
          $('#nav-home').addClass('active');

@@ -1,14 +1,6 @@
 :root {
-   --runtext-height: 2.5rem;
-   --navbar-height: 76px;
    --bs-primary: #fd4f00;
    --bs-primary-rgb: 253, 79, 0;
-}
-
-@media (min-width: 992px) {
-   :root {
-      --navbar-height: 106px;
-   }
 }
 
 html {
@@ -28,13 +20,7 @@ body {
    }
 }
 
-.runtext {
-   height: var(--runtext-height);
-}
-
 .navbar {
-   min-height: var(--navbar-height);
-
    .navbar-brand img.logo {
       width: 50px;
 
@@ -68,52 +54,55 @@ body {
    }
 }
 
-.nav-footbar a {
-   &.active {
-      color: var(--bs-primary) !important;
-      opacity: 1;
+
+.footbar {
+   .nav-footbar a {
+      &.active {
+         color: var(--bs-primary) !important;
+         opacity: 1;
+
+         .link-icon {
+            visibility: visible;
+         }
+
+         .link-icon,
+         .link-text {
+            opacity: 1;
+         }
+      }
 
       .link-icon {
-         visibility: visible;
+         visibility: hidden;
       }
+   }
 
-      .link-icon,
+   .nav-footbar-sosmed a {
+      width: 2rem;
+      height: 2rem;
+
       .link-text {
+         transform: translate(-50%, -50%) scale(1);
          opacity: 1;
-      }
-   }
-
-   .link-icon {
-      visibility: hidden;
-   }
-}
-
-.nav-footbar-sosmed a {
-   width: 2rem;
-   height: 2rem;
-
-   .link-text {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-      transition: .36s ease-in-out;
-   }
-
-   .link-icon {
-      transform: translate(-50%, -50%) scale(1);
-      transition: .36s ease-in-out;
-   }
-
-   @media (min-width: 992px) {
-
-      &:hover .link-text,
-      &:focus .link-text {
-         transform: translate(-50%, -50%) scale(.5);
-         opacity: 0;
+         transition: .36s ease-in-out;
       }
 
-      &:hover .link-icon,
-      &:focus .link-icon {
-         transform: translate(-50%, -50%) scale(2);
+      .link-icon {
+         transform: translate(-50%, -50%) scale(1);
+         transition: .36s ease-in-out;
+      }
+
+      @media (min-width: 992px) {
+
+         &:hover .link-text,
+         &:focus .link-text {
+            transform: translate(-50%, -50%) scale(.5);
+            opacity: 0;
+         }
+
+         &:hover .link-icon,
+         &:focus .link-icon {
+            transform: translate(-50%, -50%) scale(2);
+         }
       }
    }
 }
